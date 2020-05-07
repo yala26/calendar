@@ -10,7 +10,7 @@ const today = new Date();
 
 const DayComponent: FunctionComponent<IDayComponent> = ({date, selectedDay, setSelectedDay, setRandomTimes}) => {
     const isDaySelected = date.dateString === selectedDay.dateString;
-    const isToday = format(today, "yyy-MM-dd") === date.dateString ;
+    const isToday = format(today, "yyy-MM-dd") === date.dateString;
     return (
         <TouchableOpacity
             style={[

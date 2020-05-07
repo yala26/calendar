@@ -15,12 +15,26 @@ export const styles = StyleSheet.create({
         justifyContent: "space-between",
         paddingBottom: 40,
     },
-    calendarHeader: {
+    headerMonthRow: {
         flexDirection: "row",
         justifyContent: "space-between",
+    },
+    iconRow: {
+        paddingTop: 2,
+        flexDirection: "row",
+        justifyContent: "center",
         alignItems: "center",
+    },
+    hiddenCalendarHeader: {
+        height: 0,
+        opacity: 0
+    },
+    calendarHeader: {
+        paddingLeft: 21,
+        paddingRight: PADDING,
         paddingTop: 10,
-        paddingBottom: 20,
+        paddingBottom: 25,
+        justifyContent: "center",
     },
     calendarMonthText: {
         color: "#303030",
@@ -42,8 +56,10 @@ export const styles = StyleSheet.create({
         textAlign: "center",
     },
     calendar: {
-        borderRadius: 16,
+        paddingTop: 10,
         paddingBottom: 10,
+        backgroundColor: "#ffffff",
+        borderRadius: 16,
         shadowColor: "#87CEFA",
         shadowOffset: {
             width: 0,
@@ -92,7 +108,7 @@ export const styles = StyleSheet.create({
         marginTop: 20,
         marginLeft: -PADDING,
     },
-    randomTimeItem: {
+    timeCell: {
         marginLeft: PADDING,
         width: 80,
         marginBottom: 15,
@@ -111,6 +127,7 @@ export const styles = StyleSheet.create({
         elevation: 12,
     },
     randomTimeText: {
+        textAlign: "center",
         fontSize: 16,
         lineHeight: 19,
         color: "#00BFFF",
@@ -124,6 +141,15 @@ export const styles = StyleSheet.create({
         paddingRight: 35,
     },
     footerText: {
-       textAlign: "center",
+        textAlign: "center",
+    },
+    monthText: {
+        fontSize: 24,
+        lineHeight: 29,
+        fontWeight: "bold",
+        color: "#303030",
+    },
+    leftArrow: {
+        marginRight: 15,
     }
 })

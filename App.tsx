@@ -3,7 +3,7 @@ import CalendarArrows from "./src/components/CalendarArrows"
 
 const App = () => {
   return (
-    <CalendarArrows/>
+    <CalendarArrows />
   );
 }
 
