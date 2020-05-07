@@ -2,9 +2,12 @@ import {RandomTimes} from "../types";
 import {DateObject} from "react-native-calendars";
 import {format} from "date-fns";
 
+const MAX_LENGTH = 9;
+const MIN_LENGTH = 4;
+
 export const onDayChange = () => {
     let randomTimes: Array<RandomTimes> = [];
-    const arrayLength = Math.floor(Math.random() * (10 - 1) + 1);
+    const arrayLength = Math.floor(Math.random() * (MAX_LENGTH - MIN_LENGTH) + MIN_LENGTH);
     for (let i = 0; i < arrayLength; i++) {
         randomTimes.push({id: i, randomTime: getRandomTime()});
     }
